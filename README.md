@@ -1,5 +1,5 @@
 ## A Password Extractor Framework for Thermal Images
-The password extractor framework uses image processing with Python and OpenCV to recover passwords given thermal images.
+The password extractor framework uses image processing with `Python` and `OpenCV` to recover passwords given thermal images.
 This README outlines how the framework operates and provides information needed to run the framework. 
 
 There are four main steps that have to be taken to find the passwords on a thermal image:
@@ -51,3 +51,14 @@ Passwords are sorted according to their distance to the pressed keys found on th
   <img src="docs/images/passwordRecovery.png" alt="Password Recovery" width = "600px"/>
   <figcaption>Progress Information of Password Recovery</figcaption>
 </figure>
+
+
+### Setup
+The framework can be run with `Python 2.x` and uses `cv2`, `numpy`, `pickle`, and `tkinter`.
+
+### Run
+`blob.py` is the main script. It can be run with the command
+
+`python blob.py SEQ3709/SEQ_3709_58.bmp`
+
+In addition, `utils` folder contains additional helper scripts.
